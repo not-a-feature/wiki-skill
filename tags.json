@@ -1,0 +1,21 @@
+{
+  "default_tags": [
+    "Paper",
+    "Book",
+    "Presentation",
+    "Review",
+    "Webpage"
+  ],
+  "negative_tags": [
+    "MachineLearning",
+    "Bioinformatics",
+    "DataPrivacy",
+    "Healthcare",
+    "DeepLearning",
+    "DNA",
+    "NeuralNetworks",
+    "LanguageUnderstanding",
+    "DataMining",
+    "Genomics"
+  ]
+}

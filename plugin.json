@@ -1,0 +1,10 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "Collection of agent skills for local wiki.",
+  "author": {
+    "name": "not-a-feature"
+  },
+  "repository": "",
+  "license": "Apache 2.0"
+}
