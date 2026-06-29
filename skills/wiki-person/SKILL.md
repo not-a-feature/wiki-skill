@@ -5,19 +5,15 @@ description: Creates or updates a person profile in the Wiki's Persons directory
 
 # Add & Update Person Skill
 
-This skill governs the process of adding or maintaining person profiles within the Wiki.
-
 ## Instructions
 
-1. **Check for Existing Profiles:** Consult `Wiki.md` to determine if a profile for the individual already exists. If found, update the existing entry to prevent duplicates.
-2. **Gather Data:** Collect essential details, including Name, Email, Role/Responsibilities, Research Areas, and Tone (e.g., Friend, Professional). Use reputable scientific databases or official institutional websites to fill gaps.
-3. **Request Missing Information:** If critical details remain unavailable after research, ask the user to provide them.
-4. **Document Publications:** List all key/relevant publications for the person. Only format as a wiki link (e.g., `[[Library/Publication.pdf]]`) if the publication is downloaded and present in the `Library` folder. Otherwise, list them as text/citations without wiki links.
-5. **Identify Connections:** Review existing files in the `Persons` directory to identify collaborators or co-authors and include them in the **Related People** section.
-6. **Create/Update File:** Use `write_file` to create or overwrite the file at `Wiki/Persons/<Name>.md` using the standard template below.
-7. **Finalize Navigation:** Update `Wiki.md` and prepend an entry to `Wiki/log.md` (Format: `## [YYYY-MM-DD HH:MM] Add Person | <Name>`)
-
----
+1. **Check for Existing Profile:** Consult `Wiki/wiki.md`. If a profile exists, update it rather than creating a duplicate.
+2. **Gather Data:** Collect Name, Email, Lab/University, Role/Responsibilities, Research Areas, and Tone (e.g. Friend, Professional). Fill gaps from reputable scientific databases or official institutional sites.
+3. **Request Missing Info:** If critical details remain unknown, ask the user.
+4. **Document Publications:** List key/relevant publications. Format as a wiki link (e.g. `[[Library/Publication.pdf]]`) only if the file is present in `Library`; otherwise list as a plain citation.
+5. **Identify Connections:** Review `Wiki/Persons/` for collaborators or co-authors and list them under **Related People**.
+6. **Create/Update File:** Write `Wiki/Persons/<Name>.md` using the template below.
+7. **Finalize Navigation:** Update `Wiki/wiki.md` and prepend to `Wiki/log.md`: `## [YYYY-MM-DD HH:MM] Add Person | <Name>`.
 
 ## Standard Template
 
@@ -45,3 +41,7 @@ This skill governs the process of adding or maintaining person profiles within t
 ## Notes
 
 ```
+
+## Reminders
+- Use Obsidian links (`[[Link]]`); never create files in `Library`.
+- Tone: dry, objective, scientific, concise.

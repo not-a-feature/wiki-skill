@@ -5,19 +5,15 @@ description: Logs progress and updates regarding one project into the Wiki. Use 
 
 # Wiki Log Skill
 
-This skill handles logging (daily) progress of project into the user's PhD Wiki.
+Logs a project's recent progress into the user's PhD Wiki.
 
 ## Workflow Steps
 
-1. **Read thoroughly:** Grasp the core thesis, main text, and sub-arguments progress.
-2. **Discuss & Clarify:** Provide the key updates and progess to the user. What did the user do in the last days / today.
-3. **Draft Summary Entry:** Draft an entry. Keep it short. 1-4 Bullet points with 2 sentence each maximum.
-4. **Update Todos:** If the user has finished any TODOs, update them in the project page. If the user has no TODOs, do not create a new section for that.
-4. **Distribute & Interlink (Crucial):** Go into the existing project page and update them. Do not create a new page for that. Use the existing project page. Do not just blindly override; note if the new progress supports, refines, or outright contradicts previous claims. Prepend this summary to the log section of the project's page. (Format: `#### [YYYY-MM-DD HH:MM] <Title>`).
+1. **Clarify:** Confirm with the user what they did in the last days / today and which project it belongs to.
+2. **Draft Entry:** Short — 1-4 bullet points, max 2 sentences each. Link related pages, people, and methods with Obsidian links (`[[Link]]`).
+3. **Update the Project Page:** Use the existing page in `Wiki/Projects/` — never create a new one. Prepend the entry to the page's log section (format: `#### [YYYY-MM-DD HH:MM] <Title>`). Do not blindly overwrite; note whether new progress supports, refines, or contradicts previous claims, and keep existing cross-references intact.
+4. **Update Todos:** If the user finished any TODOs, mark them on the project page. Do not add a TODO section if none exists.
 
-## Tool Constraints & Reminders
-- **Obsidian-Style Links:** ALWAYS link between files using Obsidian-style markdown (e.g., `[[Link]]`).
-- **File Organization:** Create relevant subfolders and organize `.md` files hierarchically. Do not over-organize.
-- **Strict Read-Only Zones:** NEVER edit `index.md` or create files inside the `Library` folder.
-- **Preserve Cross-References:** When editing an existing Wiki page, make sure not to accidentally delete linkages.
-- **Tone:** Maintain a dry, objective, structural, scientific, and concise tone.
+## Reminders
+- Never edit `Wiki/_Index.md` or create files in the `Library` folder.
+- Tone: dry, objective, scientific, concise.

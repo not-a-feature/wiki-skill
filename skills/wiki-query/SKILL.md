@@ -5,18 +5,13 @@ description: Explores and synthesizes information from the Wiki based on a user'
 
 # Wiki Query Skill
 
-This skill handles querying and exploring existing concepts in the user's PhD Wiki.
-
 ## Workflow Steps
 
-1. **Consult Index First:** Read `Wiki/Wiki.md` to identify relevant concept/entity pages.
-2. **Drill Down:** Read the specific pages necessary to answer the query.
-3. **Synthesize:** Provide the answer citing specific pages and sources.
-4. **File the Result:** If the query results in a valuable new comparison, insight, table, or overview. Propose filing the answer as a new "Synthesis" page in the wiki. Do not do it automatically.
+1. **Consult Index First:** Read `Wiki/wiki.md` to find relevant concept/entity pages.
+2. **Drill Down:** Read the specific pages needed to answer.
+3. **Synthesize:** Answer, citing specific pages and sources with Obsidian links (`[[Link]]`).
+4. **File the Result (optional):** If the answer is a valuable new comparison, insight, table, or overview, propose saving it as a new `Synthesis` page — do not do so automatically. If created, add it to `Wiki/wiki.md` and prepend to `Wiki/log.md`.
 
-## Tool Constraints & Reminders
-- **Obsidian-Style Links:** ALWAYS link between files using Obsidian-style markdown (e.g., `[[Link]]`).
-- **File Organization:** Create relevant subfolders and organize `.md` files hierarchically. Do not over-organize.
-- **Strict Read-Only Zones:** NEVER edit `index.md` or create files inside the `Library` folder.
-- **Preserve Cross-References:** When editing an existing Wiki page, make sure not to accidentally delete linkages.
-- **Tone:** Maintain a dry, objective, structural, scientific, and concise tone unless the user requests subjective synthesis.
+## Reminders
+- Never edit `Wiki/_Index.md` or create files in `Library`. Preserve existing cross-references when editing.
+- Tone: dry, objective, scientific, concise — unless the user requests subjective synthesis.
